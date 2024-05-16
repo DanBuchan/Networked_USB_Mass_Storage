@@ -143,6 +143,8 @@ Just plug the stick in to any machine/hosts and copy files over as you would any
 
 Any computer that can open the shared SAMBA directroy can mount the `files.img` file. In windows you'll need someting like [Imdisk](https://sourceforge.net/projects/imdisk-toolkit/) and then use mount img tool it provides. It'll add a drive that represents the contents  of `files.img` file and you can copy files to that drive as you would any drive. And nicely they'll show up on whatever computer the RPi is connected to. This is kind of the whole point of this, that you can centrally administer the contents of `files.img` and any computer the Pi is attached to can then see the changes.
 
+One thing to consider here is just to have `files.img` always mounted by the machine(s) you use to centrally administer the USB file store.
+
 ## Gotek Specific Notes
 
 ### Flashfloppy Firmware
