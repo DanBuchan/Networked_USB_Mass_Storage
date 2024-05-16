@@ -1,8 +1,8 @@
 # Networked_USB_Mass_Storage
 
-This is a little project to turn a raspberry pi in to a USB mass storage device which stores it's data on the network via SAMBA. For now, the following is just a HOW TO achieve this. Soon I will make this in to a shell script you can run on your pi, to "auto" configure everything.
+This is a little project to turn a raspberry pi in to a USB mass storage device which stores it's data on the network via SAMBA. For now, the following is just a HOW TO achieve this. Soon I will make this in to a shell script you can run on your pi to "auto" configure everything.
 
-I did this mostly to help retro computer folks who are using things like gotek floppy emulators so they can have a means of keeping their floppy images on some centrally adminsitered place on the network. So it kind of gives you a way to give a way to pseudo-network access any retro computer that will take a gotek. 
+I did this mostly to help retro computer folks who are using things like gotek floppy emulators so they can have a means of keeping their floppy images on some centrally adminsitered place on the network. So it kind of gives you a way to give a way to pseudo-network access any retro computer that will take a gotek. But really this is a generic solution for instance, if you have a TV that will play MP4s from USB stick, then you could use this to store your films on your NAS. 
 
 ## Preliminary set up
 
