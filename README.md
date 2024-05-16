@@ -163,3 +163,5 @@ To remedy this you should buy or make a USB data-only cable. I could not find an
 
 1. Write shell script to just do all this in one go
 2. Swtich to libcomposite as g_mod_probe is deprecated now
+3. Add ability to have the file system stored over FTP
+3
