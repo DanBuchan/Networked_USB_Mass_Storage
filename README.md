@@ -153,7 +153,7 @@ As this is just a USB mass storage device don't forget to put the (flashfloppy f
 
 ### Data Only USB Cable
 
-So I found that my gotek was not fully electrically isolated. Clearly there are some diodes that should be in place that are not. With my RPi powered and connected to the gotek it was able to turn on the LED circuit in my Amiga even when the Amiga were not powered up. Concerning to say the least. I guess everyone who designed the gotek assumed you'd only attach a passive USB stick, and not some powered device like a RPi. 
+So I found that my gotek was not fully electrically isolated. Clearly there are some diodes that should be in place that are not. With my RPi powered and connected to the gotek it was able to turn on the LED circuit in my Amiga even when the Amiga was not powered up. Concerning to say the least. I guess everyone who designed the gotek assumed you'd only attach a passive USB stick, and not some powered device like a RPi. 
 
 Personally I don't want power flowing in to my precious Amiga from multiple sources.
 
