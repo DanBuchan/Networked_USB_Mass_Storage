@@ -34,7 +34,7 @@ For some reason the RPi OS has a zero sized SWAP partition which makes it a ball
 
 #### Set to boot to non-graphical mode
 
-You'll not need to connect the pi to a display and the pi will boot WAY FASTE if you turn off the GUI/Desktop. You can set it to boot to non-graphical. Boot the pi and in a terminal (maybe even via ssh as above) type:
+You'll not need to connect the pi to a display and the pi will boot WAY FASTER if you turn off the GUI/Desktop. You can set it to boot to non-graphical. Boot the pi and in a terminal (maybe even via ssh as above) type:
 
 ``` bash
 sudo raspi-config
@@ -88,7 +88,7 @@ So... on the pi in a terminal; First make the block store in the SAMBA dir. I'm 
 
 ``` bash
 cd /mnt/file_share
-sudo dd if=/dev/zero of=files.img bs=1M count=2K
+sudo dd if=/dev/zero of=files.img bs=1G count=2K
 ```
 
 Next, add this to be mounted whenever the pi boots
@@ -124,11 +124,11 @@ You can achieve the equivalent pretty easily in Mac and Linux too.
 
 ## Now use your Networked USB stick
 
-Ok, you need to think about boot order when using this. Firstly the device hosting you SAMBA shared directory on and the directory available BEFORE you boot the RPi. Once the Pi is booted and has mounted the SAMBA share, only then should you plug the Pi in to the USB of a new USB host. 
+Ok, you need to think about boot order when using this. Firstly the device hosting you SAMBA shared directory on and the directory available on your network BEFORE you boot the RPi. Once the Pi is booted and has mounted the SAMBA share, only then should you plug the Pi in to the USB of a new USB host (i.e. the powered up gotek). 
 
-1. Boot and/or ensure you SAMBA host is running and accessible
+1. Boot and/or ensure you SAMBA host (your PC or NAS) is running and accessible
 2. Boot your RPi
-3. Boot the USB host
+3. Boot the USB host (the machine with your gotek in it)
 4. Now plug the PPi in to the USB Host
 
 It is critical that 1 happens before 2, the others ought to be fine to happen in any order.
